@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <body onload="doLogout();">
+        <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+        
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyD21bashHK0VpIZ07urXvGVVe7KNtzzWDo",
+                authDomain: "hackmit-project-de210.firebaseapp.com",
+                databaseURL: "https://hackmit-project-de210.firebaseio.com",
+                projectId: "hackmit-project-de210",
+                storageBucket: "hackmit-project-de210.appspot.com",
+                messagingSenderId: "603510882166",
+                appId: "1:603510882166:web:9c8eb8427040ab18d70457"
+            }; 
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        
+        <script>
+            function doLogout() {
+                firebase.auth().onAuthStateChanged(function(user) {
+                    if (user) {
+                        firebase.auth().signOut();
+                    }  
+                    
+                    window.location.href = "index.html";
+                });
+            }
+            
+        </script>
+    </body>
+</html>
