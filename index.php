@@ -140,7 +140,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="signup" href="signup.html">Sign Up</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="emailAccountSignedIn" href="personalAccount.html">Hi, </a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="emailAccountSignedIn" href="personalAccount.php">Hi, </a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
                 <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="logout" href="logout.html">Logout</a>
